@@ -1,0 +1,52 @@
+/* CSS 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.chatDisabled {
+    display: none;
+}
+
+.chatabled {
+    display: block;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat>li {
+    width: 100%;
+}
+
+.conChat {
+    padding: 10px;
+}
+
+
+/* 반응형 */
+@media screen and (max-width: 800px), (max-width: 991px) {
+    .exitBtnBox {
+        width: 25% !important;
+    }
+
+    .chatInputBox {
+        width: 50% !important;
+    }
+
+    .sendBtnBox {
+        width: 25% !important;
+    }
+
+    .conChat {
+        padding: 5px;
+    }
+}
